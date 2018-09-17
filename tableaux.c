@@ -45,7 +45,7 @@ int main()
 }
 
 */
-
+/*
 int main(int argc, char const *argv[])
 {
 	int f;
@@ -57,3 +57,81 @@ int main(int argc, char const *argv[])
 	
 	return 0;
 }
+*/
+
+//
+//TROUVER LE NOMBRE DE PERSONNES QUI ONT 0 ENFANTS
+//TROUVER LE MAXIMUM
+//L'INDICE DE LA PERSONNE QUI A LE PLUS D'ENFANTS
+//
+//
+
+
+int main()
+{
+	int contaZero = 0;
+	int somEnfants = 0;
+	int maisEnf = 0;
+	int indice = 0;
+	int fam[] = {2, 0, 0, 0, 1, 0, 3, 1, 0, 0 , 0, 4};
+
+	for(int i = 0; i < 12; i++){
+
+
+
+
+		if(fam[i] == 0){
+			contaZero++;
+		}
+
+
+
+		somEnfants = fam[i] + somEnfants;
+
+		if(fam[i] > maisEnf){
+			maisEnf = fam[i];
+			indice = i;
+		}
+
+
+	}
+
+	printf("%d\n", contaZero);
+		printf("%d\n", somEnfants);
+			printf("%d\n", indice);
+				printf("%d\n", maisEnf);
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
